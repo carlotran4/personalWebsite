@@ -17,4 +17,5 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  disable: ["react/no-unknown-property"]
 }
