@@ -2,6 +2,7 @@
 
 h1 {
   @apply text-2xl;
+  @apply text-neutral-300;
 }
 :root {
   color-scheme: dark;
