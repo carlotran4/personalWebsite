@@ -6,14 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "build": "cd client && npm run build",
-    "install-all": "npm install && cd client && npm install"
+    "build": "cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "Carlo Tran",
   "license": "MIT",
   "dependencies": {
     "@craco/craco": "^7.1.0",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "vite": "5.0.12"
   }
 }
