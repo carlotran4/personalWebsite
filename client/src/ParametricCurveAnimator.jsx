@@ -2,7 +2,7 @@ function ParametricCurveAnimator() {
   return (
     <div>
       <h1>Parametric Curve Animator</h1>
-      <p>Coming soon...</p>
+      <p>Coming soon!</p>
     </div>
   );
 }
