@@ -1,30 +1,26 @@
-import { Link } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 
-const Projects = () => {
+const Projects = ({ projects }) => {
   return (
     <>
       <div class="flex flex-wrap p-4">
-        <Card
-          src="/archimedesCurve.gif"
-          alt="Parametric Curve Animator"
-          title="Parametric Curve Animator"
-          description="C++, ImGui, ImGraph"
-          link="/projects/parametric-curve-animator"
-        />
+        {projects.map((project, index) => (
+          <Card src={project.src} title={project.title} toolsUsed={project.toolsUsed} link={project.link} key={index} />
+        ))}
       </div>
     </>
   );
 };
 
-const Card = ({ src, alt, title, description, link }) => {
+const Card = ({ src, title, toolsUsed, link }) => {
   return (
     <>
       <Link class="w-[calc(33.33%-2rem)] m-4" to={link}>
         <div class="rounded overflow-hidden shadow-lg bg-white/5 p-4 hover:bg-white/15 cursor-pointer">
-          <img class="w-full" src={src} alt={alt} />
+          <img class="w-full " src={src} alt={title} />
           <div class="py-4">
             <div class="font-bold text-xl mb-2">{title}</div>
-            <p class="text-gray-300 text-base italic">{description}</p>
+            <p class="text-gray-300 text-base italic">{toolsUsed}</p>
           </div>
         </div>
       </Link>
