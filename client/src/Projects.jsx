@@ -15,7 +15,7 @@ const Projects = ({ projects }) => {
 const Card = ({ src, title, toolsUsed, link }) => {
   return (
     <>
-      <Link class="w-[calc(33.33%-2rem)] m-4" to={link}>
+      <Link class="w-full md:w-[calc(50%-2rem)] lg:w-[calc(33.33%-2rem)] m-4" to={link}>
         <div class="rounded overflow-hidden shadow-lg bg-white/5 p-4 hover:bg-white/15 cursor-pointer">
           <img class="w-full " src={src} alt={title} />
           <div class="py-4">
