@@ -4,14 +4,14 @@ import { Outlet, Link } from "react-router-dom";
 function ProjectPage({ title, toolsUsed, dateRange, description, gitHubLink, websiteLink = "", videoLink = "" }) {
   return (
     <>
-      <h1 class="text-5xl py-5 ml-6 pl-5 mr-10 border-b-2 ">{title}</h1>
-      <span class="inline-block italic pl-8 py-2">{toolsUsed}</span>
-      <span class="inline-block italic float-right pr-12 py-2">{dateRange}</span>
-      <h1 class="text-2xl py-5 ml-6 pl-5 mr-10">{description}</h1>
-      <div class="w-full flex justify-center mt-5">
+      <h1 className="text-5xl text-center py-2 mx-2 md:border-b-2 md:text-left md:pl-5">{title}</h1>
+      <span className="block italic text-center py-2 md:inline-block md:pl-5">{toolsUsed}</span>
+      <span className="block italic text-center py-2 md:inline-block md:float-end md:pr-5">{dateRange}</span>
+      <h1 className="text-2xl py-5 text-center md:text-left mx-5">{description}</h1>
+      <div className="w-full flex justify-center mt-5">
         {websiteLink != "" && (
           <Link target="_blank" to={websiteLink}>
-            <button class="bg-white/10 hover:bg-white/20 font-bold py-2 px-4 rounded mb-5 mr-5">
+            <button className="bg-white/10 hover:bg-white/20 font-bold py-2 px-4 rounded mb-5 mr-5">
               <LinkSVG />
               Visit Website
             </button>
@@ -19,7 +19,7 @@ function ProjectPage({ title, toolsUsed, dateRange, description, gitHubLink, web
         )}
 
         <Link target="_blank" to={gitHubLink}>
-          <button class="bg-white/10 hover:bg-white/20 font-bold py-2 px-4 rounded mb-5">
+          <button className="bg-white/10 hover:bg-white/20 font-bold py-2 px-4 rounded mb-5">
             <GitHubSvg />
             See the Code
           </button>
@@ -28,11 +28,11 @@ function ProjectPage({ title, toolsUsed, dateRange, description, gitHubLink, web
 
       {videoLink != "" && (
         <iframe
-          className="mx-auto p-5 aspect-video w-2/3"
+          className="mx-auto p-5 aspect-video w-full md:w-3/4 lg:w-1/2"
           src={videoLink}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen="true"
+          allowFullScreen
         ></iframe>
       )}
     </>
@@ -49,7 +49,7 @@ const GitHubSvg = () => {
 
 const LinkSVG = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 inline mr-2">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 inline mr-2">
       <path
         fillRule="evenodd"
         d="M19.902 4.098a3.75 3.75 0 0 0-5.304 0l-4.5 4.5a3.75 3.75 0 0 0 1.035 6.037.75.75 0 0 1-.646 1.353 5.25 5.25 0 0 1-1.449-8.45l4.5-4.5a5.25 5.25 0 1 1 7.424 7.424l-1.757 1.757a.75.75 0 1 1-1.06-1.06l1.757-1.757a3.75 3.75 0 0 0 0-5.304Zm-7.389 4.267a.75.75 0 0 1 1-.353 5.25 5.25 0 0 1 1.449 8.45l-4.5 4.5a5.25 5.25 0 1 1-7.424-7.424l1.757-1.757a.75.75 0 1 1 1.06 1.06l-1.757 1.757a3.75 3.75 0 1 0 5.304 5.304l4.5-4.5a3.75 3.75 0 0 0-1.035-6.037.75.75 0 0 1-.354-1Z"

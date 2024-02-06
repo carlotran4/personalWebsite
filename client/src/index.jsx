@@ -30,7 +30,7 @@ export default function App() {
       websiteLink: "https://frankenstein-game.azurewebsites.net/",
     },
     {
-      src: "",
+      src: "/beatmaker.png",
       title: "Beat Maker & Piano",
       toolsUsed: "Javascript, CSS, HTML",
       link: "/projects/beat-maker",

@@ -29,9 +29,9 @@ function NavBar() {
         >
           Carlo Tran
         </Link>
-        <div class="block ml-auto md:hidden">
+        <div className="block ml-auto md:hidden">
           <button
-            class="flex items-center px-3 py-5 hover:text-white"
+            className="flex items-center px-3 py-5 hover:text-white"
             onClick={() => {
               document.getElementById("content").classList.toggle("hidden");
               document.getElementById("menu").classList.toggle("hidden");
@@ -94,7 +94,7 @@ function NavBar() {
               <span className="ml-2 md:block md:m-0">GitHub</span>
             </Link>
             <Link
-              className="block md:text-xs md:inline-block text-neutral-300 hover:text-white px-4 pt-3"
+              className="block md:text-xs md:inline-block text-neutral-300 hover:text-white px-4 pt-3 pb-3 md:pb-0"
               target="_blank"
               to="https://linkedin.com/in/carlo-tran/"
             >
