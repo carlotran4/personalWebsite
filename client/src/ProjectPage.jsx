@@ -8,18 +8,18 @@ function ProjectPage({ title, toolsUsed, dateRange, description, gitHubLink, web
       <span className="block italic text-center py-2 md:inline-block md:pl-5">{toolsUsed}</span>
       <span className="block italic text-center py-2 md:inline-block md:float-end md:pr-5">{dateRange}</span>
       <h1 className="text-2xl py-5 text-center md:text-left mx-5">{description}</h1>
-      <div className="w-full flex justify-center mt-5">
+      <div className="w-full flex justify-center align-middle mt-5 flex-col md:inline-block md:text-center">
         {websiteLink != "" && (
-          <Link target="_blank" to={websiteLink}>
-            <button className="bg-white/10 hover:bg-white/20 font-bold py-2 px-4 rounded mb-5 mr-5">
+          <Link target="_blank" to={websiteLink} className="max-w-max mx-auto my-2 md:mx-2">
+            <button className="bg-purple-300 hover:bg-purple-200 text-black font-bold py-2 px-4 rounded">
               <LinkSVG />
               Visit Website
             </button>
           </Link>
         )}
 
-        <Link target="_blank" to={gitHubLink}>
-          <button className="bg-white/10 hover:bg-white/20 font-bold py-2 px-4 rounded mb-5">
+        <Link target="_blank" to={gitHubLink} className="max-w-max mx-auto my-2 md:mx-2">
+          <button className="bg-purple-300 hover:bg-purple-200 text-black font-bold py-2 px-4 rounded">
             <GitHubSvg />
             See the Code
           </button>

@@ -34,9 +34,7 @@ const Home = () => {
             Computational Epidemiology Group
           </Link>
           <Link target="_blank" to={resume} className="block text-lg max-w-max underline mx-auto text-center">
-            <button className="bg-purple-300 text-black hover:bg-white/20 hover:text-neutral-300 py-2 px-4 rounded my-4">
-              See My Resume
-            </button>
+            <button className="bg-purple-300 text-black hover:bg-purple-200 py-2 px-4 rounded my-4">See My Resume</button>
           </Link>
         </div>
         <div className="col-span-4">
@@ -58,7 +56,7 @@ const Home = () => {
             department.
           </p>
         </div>
-        <div className="col-span-1 col-start-3 pb-12">
+        <div className="col-span-2 col-start-3 pb-12">
           <h1 className="text-5xl pl-4 pt-12 md:pt-0">Skills</h1>
           <ul>
             <li className="text-lg px-8 pt-2">- Node.Js</li>
