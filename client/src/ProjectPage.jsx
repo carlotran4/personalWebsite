@@ -11,7 +11,7 @@ function ProjectPage({ title, toolsUsed, dateRange, description, gitHubLink, web
       <div className="w-full flex justify-center align-middle mt-5 flex-col md:inline-block md:text-center">
         {websiteLink != "" && (
           <Link target="_blank" to={websiteLink} className="max-w-max mx-auto my-2 md:mx-2">
-            <button className="bg-purple-300 hover:bg-purple-200 text-black font-bold py-2 px-4 rounded">
+            <button className="bg-purple-300 hover:bg-purple-400 text-black font-bold py-2 px-4 rounded">
               <LinkSVG />
               Visit Website
             </button>
@@ -19,7 +19,7 @@ function ProjectPage({ title, toolsUsed, dateRange, description, gitHubLink, web
         )}
 
         <Link target="_blank" to={gitHubLink} className="max-w-max mx-auto my-2 md:mx-2">
-          <button className="bg-purple-300 hover:bg-purple-200 text-black font-bold py-2 px-4 rounded">
+          <button className="bg-purple-300 hover:bg-purple-400 text-black font-bold py-2 px-4 rounded">
             <GitHubSvg />
             See the Code
           </button>

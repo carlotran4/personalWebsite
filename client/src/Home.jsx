@@ -34,7 +34,7 @@ const Home = () => {
             Computational Epidemiology Group
           </Link>
           <Link target="_blank" to={resume} className="block text-lg max-w-max underline mx-auto text-center">
-            <button className="bg-purple-300 text-black hover:bg-purple-200 py-2 px-4 rounded my-4">See My Resume</button>
+            <button className="bg-purple-300 text-black hover:bg-purple-400 py-2 px-4 rounded my-4">See My Resume</button>
           </Link>
         </div>
         <div className="col-span-4">
