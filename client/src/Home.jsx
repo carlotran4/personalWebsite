@@ -11,7 +11,7 @@ const Home = () => {
         <div className="col-span-2">
           <img src="/headshot.jpg" className="rounded-full w-48 mx-auto mt-8 mb-4" />
           <h1 className="text-5xl text-center">Carlo Tran</h1>
-          <p className="mx-auto text-lg text-center">Computer Science, B.S.</p>
+          <p className="mx-auto text-lg text-center">Computer Science, B.S. (2026)</p>
           <Link
             target="_blank"
             to="https://www.caseys.com/careers/technology"
